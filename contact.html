@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Luxury Watch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="top">
+        <li class="logo"><a href="index.html"><img src="2.png" alt=""></a></li>
+        <li class="list"><a href="index2.html">CASIO</a></li>
+        <li class="list"><a href="index4.html">G-SHOCK</a></li>
+        <li class="lists"><a href="">BRAND <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="menulist">
+                <li class="list1">
+                    <a href=""></a>
+                </li>
+                <li class="list1">
+                    <a href="">Longines</a>
+                </li>
+                <li class="list1">
+                    <a href="">Baby-G</a>
+                </li>
+                <li class="list1">
+                    <a href="">Rado</a>
+                </li>
+                <li class="list1">
+                    <a href="">Movado</a>
+                </li>
+                <li class="list1">
+                    <a href="">Orient</a>
+                </li>
+                <li class="list1">
+                    <a href="">Citizen  </a>
+                </li>
+              </ul>
+        </li>
+        <li class="list"><a href="index3.html">💍JEWELS</a></li>
+        <li class="list"><a href="">💏COUPLE</a></li>
+        <li class="list"><a href="contact.html">📞CONTACT</a></li>
+        <li class="list"><a href="">INFORMATION</a></li>
+        <li>
+            <input type="" placeholder="Search...">
+            <button>
+            <i class="fa-solid fa-magnifying-glass"></i>    
+            </button>
+        </li>  
+        <li class="cart"><a href="cart.html"></i><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></i></i></a></li>
+        <li class="login"><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></i></a></li>
+    </div>
+
+    <div class="middle">
+        <div class="middle1">
+            <div class="arrange">
+                <li> 
+                  <a href="">Arrangement</a>
+                 <ul class="sapxep">
+                    <li class="list1"><a href="index.html">MAN</a></li>
+                    <li class="list2"><a href="index1.html">WOMAN</a></li>
+                    <li class="list3"><a href="index2.html">CASIO</a></li>
+                    <li class="list4"><a href="index3.html">JEWELS</a></li>
+                    <li class="list5"><a href="index4.html">G-SHOCK</a></li> 
+                 </ul>
+                </li>
+            </div>
+        </div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<style>
+    
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.form-group button {
+    padding: 10px 10px;
+    background-color: #d0f333;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit</button>
+            <a href="index.html"></a>
+        </div>
+    </form>
+</div>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Collect form data
+    var formData = new FormData(this);
+
+    // You can do further processing with the form data here
+    // For example, sending it to a server using AJAX
+
+    // For now, let's log the form data to the console
+    for (var pair of formData.entries()) {
+        console.log(pair[0] + ': ' + pair[1]);
+    }
+
+    // Optionally, you can reset the form after submission
+    // this.reset();
+});
+</script>
+
+
+
+</body>
+</html>
+

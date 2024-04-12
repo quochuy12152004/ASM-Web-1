@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.top{
+    background-color:rgba(41, 39, 39, 0.733);
+    position: fixed;
+    top: 0;
+    margin-bottom: 0;
+    height: 100px;
+}
+
+.top .logo{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.top img{
+    width: 150px;
+    height: auto;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.top li{
+    list-style: none;
+    display: inline;
+}
+
+
+.top li a{
+    
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+    margin-right: 25px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.top li a:hover{
+    text-decoration: underline;
+}
+
+.top li input{
+    width:170px;
+    height: 30px;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.top li button{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color:rgb(255, 255, 255) ;
+}
+
+.login > a >i.fa-solid{
+    width: 20px; 
+    margin-top: 10px;
+} 
+
+.login{
+    font-size: 25px;
+}
+
+.login > a{
+    padding-left: 10px;
+    
+}
+
+.cart > a >i.fa-solid{
+    width: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+} 
+
+.cart > a{
+    padding-left: 5px;
+}
+.cart{
+    font-size: 25px;
+}
+
+.menulist{
+    background-color:#3b3434;
+    width: 120px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    visibility: hidden;
+    position: absolute;
+    padding-left: 15px;
+    transition: 0.3s;
+    font-weight: bold;
+    margin-left: 500px;
+    top: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.fa-solid{
+    width: 10px;
+}
+
+.lists:hover .menulist{
+    visibility: visible;
+}
+
+.fa-solid .fa-caret-down{
+    width: 20px;
+}
+
+#cart-table {
+    width: 30%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c6c6c6;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+    border: 1px solid black;
+}
+
+#cart-table.show {
+    display: block;
+    opacity: 1;
+}
+
+
+#cart-table {
+    width: 50%;
+    border-collapse: collapse;
+    height: auto;
+  }
+  
+  #cart-table th,
+  #cart-table td {
+    padding: 12px;
+    /* text-align: left; */
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-left: 50px;
+  }
+  
+  #cart-table {
+    max-height: 300px; /* Đặt chiều cao tối đa cho bảng */
+    overflow-y: scroll; /* Kích hoạt cuộn dọc */
+}
+
+  #cart-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  #cart-table tfoot td {
+    padding-left: 0;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  
+  #total-price {
+    background-color: #bbbbbb;
+    width: 100%;
+  }
+  #pay-button {
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Cỡ chữ */
+    border: none; /* Không có đường viền */
+    cursor: pointer; /* Hiển thị con trỏ khi rê chuột vào nút */
+    border-radius: 4px; /* Bo góc cho nút */
+  }
+
+  #cart-table button {
+    margin-left: 15px;
+  }
+  
+  #pay-button:hover {
+    background-color: #45a049; /* Màu nền khi rê chuột vào */
+  }
+  
+  #pay-button:active {
+    background-color: #3e8e41; /* Màu nền khi nút được nhấn */
+  }
+
+/* Middle */
+/* phan sap xep */
+.middle{
+    width: 100%;
+    margin-top: 120px;
+}
+.arrange{
+    width: 25%;
+    height: auto;
+    list-style: none;
+    padding-left: 75%;
+    margin-top: 20px;
+    vertical-align: middle;
+   
+}
+
+.arrange li{
+    width: 200px;
+    padding-left: 150px;
+}
+
+.arrange > li > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0); 
+    font-weight: bold;
+    background-color: #353232;
+    
+    
+}
+
+.arrange > li >a:hover{
+    text-decoration: underline;
+}
+
+.sapxep li  a{
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+}
+
+.sapxep li a:hover{
+    text-decoration: underline;
+}
+
+.sapxep li{
+    list-style: none; 
+    width: 90%;
+    line-height: 1.5;
+    padding: 10px ;
+    
+}
+
+.sapxep{
+    margin-top: 20px;
+    background-color:#333030;
+    width: 120px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    visibility: hidden;
+    position: absolute;
+    padding-right: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+    text-align: center;
+}
+.arrange  li:hover .sapxep{
+    visibility: visible;
+    
+}
+
